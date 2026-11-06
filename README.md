@@ -1,17 +1,19 @@
 # Employee Time Assignment
 
-A C# .NET console application developed by **Praveen Dharipelli** to retrieve employee time-entry data from a REST API, calculate total working hours, and generate an HTML report and pie chart.
+A C# .NET 9 console application developed by **Praveen Dharipelli** to retrieve employee time-entry data from a REST API, calculate total working hours, and generate an HTML report with a visual pie chart.
 
 ## Features
-- Fetch employee time-entry data from a REST API using HttpClient.
-- Deserialize JSON data using Newtonsoft.Json.
+
+- Fetch employee time-entry records from a REST API using `HttpClient`.
+- Deserialize JSON responses using `Newtonsoft.Json`.
 - Calculate total working hours for each employee using LINQ.
-- Sort employees based on total working hours.
+- Sort employees by total working hours in descending order.
 - Generate an HTML employee report.
 - Highlight employees who have worked less than 100 hours.
-- Generate a PNG pie chart displaying each employee's percentage of total working hours.
+- Generate a PNG pie chart displaying each employee's share of total working hours.
 
 ## Technologies Used
+
 - C#
 - .NET 9
 - Newtonsoft.Json
@@ -22,29 +24,24 @@ A C# .NET console application developed by **Praveen Dharipelli** to retrieve em
 
 ## How to Run
 
-### Using Executable (Recommended)
-
-1. Download `PraveenDharipelli_CSharpAssignment.exe`.
+1. Download `PraveenDharipelli.exe`.
 2. Double-click the executable to run the application.
-3. The application retrieves the employee data from the API and generates the output files.
-4. Open the generated HTML report in a browser to view employee working hours.
+3. The application automatically retrieves and processes employee time-entry data.
+4. The HTML report and pie chart are generated automatically.
 
-**Note:** The executable requires a compatible .NET 9 runtime if it is not published as a self-contained application.
-
-### Using Source Code
-
-```powershell
-dotnet restore
-dotnet run
-```
+**No installation required. Just download and run the EXE.**
 
 ## Generated Output
 
 The application generates the following files:
 
-- `EmployeeReport.html` – Employee working-hours report.
-- `EmployeeWorkHours.png` – Employee working-hours pie chart.
+| File | Description |
+|---|---|
+| `EmployeeReport.html` | Employee working-hours report with sorted records and highlights for employees below 100 hours. |
+| `EmployeeWorkHours.png` | Pie chart displaying each employee's percentage of total working hours. |
 
 ## Author
 
 **Praveen Dharipelli**
+
+GitHub: [PraveenDharipelli](https://github.com/praveendharipelli26)
